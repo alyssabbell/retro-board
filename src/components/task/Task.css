@@ -1,0 +1,20 @@
+.taskbox {
+    background-color: pink;
+    /* width: 20%; */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.text-input-area {
+    background: transparent;
+    width: 100%;
+    /* font-size: 5em; */
+    border: 0 none;
+    outline: none;
+  }
+
+  .task-button {
+      padding: 5px;
+      border-style: none;
+      background: transparent;
+  }

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Oleo+Script+Swash+Caps|Spartan&display=swap');
+
+.column {
+    width: 25%;
+}
+
+.col-header {
+    font-family: 'Spartan', sans-serif;
+    opacity: .7;
+}
+
+.add-button {
+    width: 100%;
+    margin-bottom: 10px;
+}
