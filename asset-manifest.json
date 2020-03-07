@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/retro-board/static/css/main.da6967cc.chunk.css",
+    "main.js": "/retro-board/static/js/main.69bb64f3.chunk.js",
+    "main.js.map": "/retro-board/static/js/main.69bb64f3.chunk.js.map",
+    "runtime-main.js": "/retro-board/static/js/runtime-main.638d41e9.js",
+    "runtime-main.js.map": "/retro-board/static/js/runtime-main.638d41e9.js.map",
+    "static/js/2.8cd06780.chunk.js": "/retro-board/static/js/2.8cd06780.chunk.js",
+    "static/js/2.8cd06780.chunk.js.map": "/retro-board/static/js/2.8cd06780.chunk.js.map",
+    "index.html": "/retro-board/index.html",
+    "precache-manifest.d213ab47d9f1585b7fb091f5343bb0c5.js": "/retro-board/precache-manifest.d213ab47d9f1585b7fb091f5343bb0c5.js",
+    "service-worker.js": "/retro-board/service-worker.js",
+    "static/css/main.da6967cc.chunk.css.map": "/retro-board/static/css/main.da6967cc.chunk.css.map",
+    "static/js/2.8cd06780.chunk.js.LICENSE.txt": "/retro-board/static/js/2.8cd06780.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.638d41e9.js",
+    "static/js/2.8cd06780.chunk.js",
+    "static/css/main.da6967cc.chunk.css",
+    "static/js/main.69bb64f3.chunk.js"
+  ]
+}
