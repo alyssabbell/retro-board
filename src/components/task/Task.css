@@ -1,20 +1,29 @@
 .taskbox {
     background-color: pink;
     /* width: 20%; */
+    border-radius: 5px;
     text-align: center;
     margin-bottom: 10px;
   }
 
 .text-input-area {
+    padding-left: 1rem;
+    padding-top: 1rem;
     background: transparent;
     width: 100%;
     /* font-size: 5em; */
     border: 0 none;
     outline: none;
+    font-size: 1em;
+    opacity: .7;
   }
 
   .task-button {
       padding: 5px;
       border-style: none;
       background: transparent;
+      opacity: .7;
+     
   }
+
+  

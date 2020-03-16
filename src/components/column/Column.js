@@ -1,49 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useContext } from 'react';
 import Task from '../task/Task.js';
+import TaskContext from "../../contexts/TaskContext.js";
+import BackgroundContext from "../../contexts/BackgroundContext.js";
 import "./Column.css";
 
 const Column = (props) => {
-   // const [addClicked, setAddClicked] = useState(false);
-    // use this state to hold the list of Tasks from each task component
-    const [taskList, setTaskList] = useState([]);
-    const [clickCount, setClickCount] = useState(0);
-    
-    // const handleTaskChange = (e) => {
-    //     //alert("handleChange Reached");
-    //      const newList = [
-    //          ...taskList, ""]
-    //     setTaskList(newList);
-    // };
 
-    // const addTask = () => {
-    //      return (
-    //      <div>
-    //             <Task taskList={taskList} setTaskList={setTaskList} />
-    //         </div>
-    //      )
-    // };
+    const [taskItems, setTaskItem] = useState([]);
+    console.log(taskItems);
 
-   // console.log(clickCount);
-   const addClicks = () => {
-    setClickCount(clickCount+1);
-   }
-    // console.log(clickCount);
+    const color = useContext(BackgroundContext);
+
+    // function to add a new task item into state when button clicked - for now tasks are strings (state is an array of strings)
+    const newTask = () => {
+        setTaskItem([...taskItems, ""]);
+    };
+
     return (
         <div className="column">
             <h2 className="col-header">{props.header}</h2>
-            <button className="add-button" type="button" onClick={addClicks}>+</button>
- 
-          {  [...Array(clickCount)].map((item, index) => {
-              
-              return (<div> 
-                        <Task taskList={taskList} setTaskList={setTaskList} key={index}/> 
-                    </div>
-              )
-          })           
-        }       
+            <button className="add-button" type="button" onClick={newTask}>+</button>
+
+            {taskItems.map((taskName, index) => {
+                return (<div>
+                    <TaskContext.Provider value={[taskItems, setTaskItem]} >
+                        <Task value={taskName} key={props.header + "-" + index} index={index}
+                            bgColor={color} />
+                    </TaskContext.Provider>
+                </div>
+                )
+            }
+            )
+            }
         </div>
     )
 };
 
-export default Column;     
+export default Column;
 
