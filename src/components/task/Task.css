@@ -4,6 +4,8 @@
     border-radius: 5px;
     text-align: center;
     margin-bottom: 10px;
+    /* border: 2px solid rgb(158, 158, 158); */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, .3);
   }
 
 .text-input-area {

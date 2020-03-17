@@ -16,10 +16,11 @@ const Column = (props) => {
         setTaskItem([...taskItems, ""]);
     };
 
+    console.log("state: " + taskItems);
     return (
         <div className="column">
             <h2 className="col-header">{props.header}</h2>
-            <button className="add-button" type="button" onClick={newTask}>+</button>
+            <button className="add-button" type="button" onClick={newTask}>Add Item</button>
 
             {taskItems.map((taskName, index) => {
                 return (<div>
